@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <!--navigation menu-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Portfolio</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="#home">Home</a></div>
+                <div class="link"><a href="#about">About</a></div>
+                <div class="link"><a href="#skills">TechnicalSkills</a></div>
+                <div class="link"><a href="#education">Education</a></div>
+                <div class="link contact-btn"><a href="#contact">Contact Details</a></div>
+            </div>
+         </div>
+            <i class="fa-solid fa-bars hamburg"onclick="hamburg()"></i>
+        </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skill">TechnicalSkills</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact Details</a>
+                    <i class="fa-solid fa-xmark cancel"onclick="cancel()"></i>
+                </div>  
+            </div>
+    </nav> 
+        <section>
+        
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="content">
+            <div class="main-container">
+                <div class="image">
+                    <img src="IMAGES/Hny.png" alt="Profile Picture">
+                </div>
+                <div class="content">
+                <div class="home-box">
+                    <h1 data-aos="fade-left"> 
+                        Hello, i'm <span> Aqilah Hanny</span>
+                    </h1>
+                    <div class="typewriter">
+                        <span class="typewriter-text">I'm an IT Students</span>
+                        <label for=""></label>
+                    </div>
+                    <p>Welcome to my professional portfolio website. I am a passionate web developer with a strong interest in creating innovative and user-friendly web applications. Explore my skills, education, and achievements to learn more about me.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/qila_hanyy/" target="_blank">
+                            <i class="fa-brands fa-square-instagram"></i>qila_hanny
+                         </a>
+                    </div>
+                    <div class="btn">
+                        <button> Hire Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--about section-->
+    <section class="about" id="about">
+        <div class="content">
+            <h2>About Me</h2> 
+            <div class="about-details">
+                <div class="left">
+                    <img src="IMAGES/Hny.png" alt=""/>
+                </div>
+                <div class="right">
+                <div class="about-box">
+                    <div class="box">Hello! My name is Nurull Aqilah Hanny.</div>
+                    <p>
+                     I am currently studying Diploma in Information Technology at Unitar International University. I enjoy web development and learning new programming languages. I am passionate about creating innovative and user-friendly web applications. I'm currently showing my skill to creating my own portfolio website.
+                    </p>
+                    <div class="button">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function hamburg(){
+            const navbar= document.querySelector(".dropdown")
+            navbar.style.transform ="translateY(0px)"   
+        }
+        function cancel(){
+            const navbar= document.querySelector(".dropdown")
+            navbar.style.transform ="translateY(-500px)"   
+        }
+    </script>
+</body>
+
+    <!--skills section-->
+    <section class="skills" id="skills">
+        <div class="content">
+            <h2>TechnicalSkills</h2> 
+            <div class="box">
+                <div class="text">
+                <div class="skills-box">
+                    <div class="topic">
+                        Skills Reflect My Knowledge.
+                    </div>
+                    <p data-aos="fade-right">I have a strong foundation in web development and programming languages. My skills include HTML & CSS, SQL ,C++ , and Python. I am constantly learning and improving my skills to stay up-to-date with the latest technologies in the field of Information Technology.</p>
+
+    <!--My Archievements section start-->
+    <section class="archievement" id="archievements">
+        <div class="content">
+         <div class="title"><span><h4> Archievement</h4></span></div>   
+            <div class="archievenment-details">
+                <p data-aos="fade-up">
+                I have completed the Internet Programming course and built my program.
+                </p>
+                <div class="archievement">
+                     <table>
+                            <thead>
+                                <tr>
+                                    <th>Language Type</th>
+                                    <th>Level</th>
+                                    <th>Achievements</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>HTML & CSS</td>
+                                    <td>Basic</td>
+                                    <td>Create a portfolio website</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Python</td>
+                                    <td>Intermediate</td>
+                                    <td>Build a student management system</td>
+                                </tr>
+
+                                <tr>
+                                    <td>SQL</td>
+                                    <td>Intermediate</td>
+                                    <td>Create a Library Management System</td>
+                                </tr>
+
+                                <tr>
+                                    <td>C++</td>
+                                    <td>Intermediate</td>
+                                    <td>Create a Electric Billing System</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+    
+    <!--My education section-->
+    <section class="education" id="education">
+        <div class="education-container">
+            <h2>My Education</h2>   
+            <div class="education-box">
+                <ul>
+                    <li>JAN 2013 - DEC 2018</li>
+                    <p>Middlechool Graduate at SK TAMAN MOUNT AUSTIN</p>
+                    <p>UPSR certificate</p>
+
+                    <br><br>
+
+                    <li>JAN 2019 - MAC 2024</li>
+                    <p>Highchool Graduate at SMK TAMAN MOUNT AUSTIN</p>
+                    <p>SPM certificate</p>
+
+                    <br><br>
+
+                    <li>JAN 2025 - ON GOING</li>
+                    <p>Unitar International University</p>
+                    <p>Diploma in Information Technology</p>
+    
+                </ul>
+            </div>
+        </section>
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2>Contact Details</h2>
+            <div class="contact-box">
+            <p>If you would like to get in touch with me, please feel free to reach out through the following contact information:</p>
+            <ul>
+                <li>Name: Nurull Aqilah Hanny Binti Ghafar</li>
+                <li>Email: <a href="mailto:aqilahhanny11@gmail.com">aqilahhanny11@gmail.com</a></li>
+                <li>Address: C-27-09, the main place residence</li>
+                <li>Tel: <a href="+60137113062">+60 13-711-3062</a></li>
+                <li>Social Media: <a href="https://www.instagram.com/qila_hanyy/" target="_blank">qila_hanny</a></li>
+            </ul>
+        </div>
+    </section>
+    </body>
+</html> 
